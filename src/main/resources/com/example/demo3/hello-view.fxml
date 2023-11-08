@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="684.0" style="-fx-background-color: #423E37;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.HelloController">
+   <children>
+      <Label layoutX="230.0" layoutY="38.0" text="VitaliyApp" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginTextField" layoutX="243.0" layoutY="169.0" prefHeight="33.0" prefWidth="222.0" />
+      <Label layoutX="177.0" layoutY="168.0" text="Login" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordTextField" layoutX="243.0" layoutY="228.0" prefHeight="33.0" prefWidth="222.0" />
+      <Label layoutX="136.0" layoutY="227.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="377.0" layoutY="291.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="44.0" prefWidth="88.0" style="-fx-background-color: #E3B23C;" text="Log in">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="messageText" layoutX="102.0" layoutY="296.0" prefHeight="35.0" prefWidth="234.0" text="Введите данные для входа" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
