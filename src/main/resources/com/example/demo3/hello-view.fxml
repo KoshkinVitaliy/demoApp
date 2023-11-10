@@ -32,5 +32,6 @@
          <font>
             <Font size="18.0" />
          </font></Label>
+      <Hyperlink layoutX="190.0" layoutY="392.0" onAction="#onShowLink" prefHeight="51.0" prefWidth="131.0" text="Hyperlink" />
    </children>
 </AnchorPane>

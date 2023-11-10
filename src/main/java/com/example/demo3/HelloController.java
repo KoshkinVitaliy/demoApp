@@ -2,6 +2,7 @@ package com.example.demo3;
 
 import data.User;
 import data.Users;
+import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,8 +13,9 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URI;
 
-public class HelloController {
+public class HelloController extends Application {
 
     @FXML
     private TextField loginTextField;
@@ -46,5 +48,14 @@ public class HelloController {
             }
         }
         return false;
+    }
+
+    public void onShowLink(ActionEvent actionEvent) {
+        getHostServices().showDocument("https://youtube.com");
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+
     }
 }

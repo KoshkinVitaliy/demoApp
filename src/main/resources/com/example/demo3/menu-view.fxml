@@ -6,10 +6,27 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #A39594;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.MenuController">
    <children>
-      <Label layoutX="130.0" layoutY="145.0" text="HELLO" textFill="WHITE">
+      <Label layoutX="14.0" layoutY="14.0" text="HELLO" textFill="WHITE">
          <font>
             <Font name="Calisto MT" size="95.0" />
          </font>
       </Label>
+      <TextField fx:id="enterDataField" layoutX="163.0" layoutY="155.0" prefHeight="36.0" prefWidth="201.0" />
+      <ComboBox fx:id="valuteComboBox" layoutX="383.0" layoutY="161.0" prefWidth="150.0" />
+      <Label layoutX="44.0" layoutY="161.0" prefHeight="25.0" prefWidth="110.0" text="Введите валюту" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="resultTextField" layoutX="250.0" layoutY="218.0" prefHeight="36.0" prefWidth="74.0" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="37.0" layoutY="218.0" mnemonicParsing="false" onAction="#onCountButtonClick" prefHeight="51.0" prefWidth="110.0" style="-fx-background-color: #234567;" text="Посчитать" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
